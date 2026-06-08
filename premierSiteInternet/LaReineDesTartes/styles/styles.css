@@ -1,0 +1,42 @@
+/* REPRODUCTION INTERDITE */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Pacifico&display=swap');
+
+
+footer {
+	font-style: italic;
+	text-decoration: underline overline wavy red;
+}
+[href="index.html"] {
+	text-decoration: none;
+}
+
+p + p {
+	color: navy;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size:  45px;
+    font-family: 'Londrina Solid', cursive;
+}
+nav a {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+/*
+* : Universel : s'applique à tous les éléments
+[attribute] : s'applique à tous les éléments qui ont l'attribut
+A + B : s'applique à tous les éléments qui sont précédés d'un élément
+[attribute="value"] : s'applique à tous les éléments qui ont l'attribut avec la valeur
+A B : s'applique à tous les éléments qui sont des descendants d'un élément
+A > B : s'applique à tous les éléments qui sont des enfants d'un élément
+A, B : s'applique à tous les éléments A et à tous les éléments B
+A ~ B : s'applique à tous les éléments qui sont précédés d'un élément
+A[attribute] : s'applique à tous les éléments A qui ont l'attribut
+A[attribute="value"] : s'applique à tous les éléments A qui ont l'attribut avec la valeur
+
+
+*/
