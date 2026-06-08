@@ -1,78 +1,122 @@
-/* REPRODUCTION INTERDITE */
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Pacifico&display=swap');
+/* POLICES IMPORTEES */
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Pacifico&display=swap");
 
 /* Polices personnalisées */
 @font-face {
-    font-family: 'Beauty_Mermaid';
-    src: url('../policies/Beauty_Mermaid.ttf') format('truetype');
+    font-family: "Beauty_Mermaid";
+	src: url("../policies/Beauty_Mermaid.ttf") format("truetype");
 }
-
 /****************************/
-footer {
-    font-style: italic;
-	text-decoration: underline overline wavy red;
-    text-align: center;
-    color: black;
- 
-  
-    
+
+* {
+    box-sizing: border-box;
+	/* margin: 0;
+	padding: 0; */
 }
-[href="index.html"] {
-    text-decoration: none;
+.container{
+    margin: 0 auto;
+    width: 700px
+
+}
+footer {
+	font-style: italic;
+	text-decoration: underline overline wavy red;
+	text-align: center;
+	color: black;
 }
 
-h2{
-    border-top: 2px dotted salmon;
+section {
+	margin: 20px 70px;
+    position: relative;
+    top: 60px;
+    height: 1800px;
+	
 }
+
+
+[href="index.html"] {
+	text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+	border-top: 2px dotted salmon;
+	text-align: center;
+}
+
 p {
-    text-align: center;
+	text-align: center;
+	display: inline-block;
+	padding: 15px 25px;
+	/* width: 70%; */
+	/* margin: 0px auto; */
+}
+#presentation {
+	width: 50%;
 }
 p + p {
-    color: navy;
+	color: navy;
+    position: sticky;
+    top: 0;
 }
 
-h1{
-    /* text-transform: uppercase; */
-    text-decoration: lowercase;
-    font-size:  45px;
-    text-align: center;
-    /* font-family: 'Londrina Solid', cursive; */
-    font-family: 'Beauty_Mermaid', cursive;
-    color: rgb(26, 7, 29);
-    background: linear-gradient(90deg, #00416d, #e4e5e6);
-    /* background-image: url('../images/fond.jpeg'); */
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
-    height: 150px;
-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.95) ;
-text-shadow: -1px 1px 4px rgba(255, 50, 255, 0.42) ;
-border-radius: 5px;
-border: 2px solid rgba(255, 50, 255,0.42);
- 
+h1 {
+	/* text-transform: uppercase; */
+	text-decoration: lowercase;
+	font-size: 45px;
+	text-align: center;
+	/* font-family: 'Londrina Solid', cursive; */
+	font-family: "Beauty_Mermaid", cursive;
+	color: rgb(26, 7, 29);
+	background: linear-gradient(90deg, #00416d, #e4e5e6);
+	/* background-image: url('../images/fond.jpeg'); */
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	height: 150px;
+	box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.95);
+	text-shadow: -1px 1px 4px rgba(255, 50, 255, 0.42);
+	border-radius: 5px;
+	border: 2px solid rgba(255, 50, 255, 0.42);
+
 }
 nav a {
-    font-family: 'Pacifico', cursive;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    margin-right: 20px;
-    text-transform:capitalize;
+	font-family: "Pacifico", cursive;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	margin-right: 20px;
+	text-transform: capitalize;
+    position: absolute;
+    right: 0px;
+    display: block;
+    margin: 20px;
+   
 }
- img {
-    /* width: 100%;
-    height: auto; */
-    border-radius: 5px;
-    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.95) ;
- }
 
-#lipsum{
-    text-align: justify;
-    color: rgba(0, 65, 109, 0.65);
-    border: 5px ridge salmon;
-    border-radius: 0px  40px 0px 14px;
+img {
+	/* width: 100%;
+    height: auto; */
+	border-radius: 5px;
+	box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.95);
 }
+
+#lipsum {
+	text-align: justify;
+	color: rgba(0, 65, 109, 0.65);
+	border: 5px ridge salmon;
+	border-radius: 0px 40px 0px 14px;
+	width: 50%;
+    height: 200px;
+    overflow: auto;
+}
+
+
+
 /*
+Les Selecteurs CSS :
+
+
 * : Universel : s'applique à tous les éléments
 [attribute] : s'applique à tous les éléments qui ont l'attribut
 A + B : s'applique à tous les éléments qui sont précédés d'un élément
@@ -85,4 +129,19 @@ A[attribute] : s'applique à tous les éléments A qui ont l'attribut
 A[attribute="value"] : s'applique à tous les éléments A qui ont l'attribut avec la valeur
 
 
+*/
+
+
+/* INLINE : PAS REDIMENSIONNABLE
+    BLOCK : LES UNS EN DESSOUS DES AUTRES, REDIMENSIONNABLE
+    INLINE-BLOCK : LES UNS A COTE DES AUTRES, REDIMENSIONNABLE
+*/
+
+
+/* Le positionnement CSS :
+
+Le positionnemùent absolu : à n'importe quel endroit
+Le positionnement relatif : décalage par rapport à sa position normale
+Le positionnement fixe : à un endroit fixe tout le temps
+Le positionnement sticky : collant, il se comporte comme un élément relatif jusqu'à ce qu'il atteigne une certaine position, puis il se fixe à cet endroit et reste visible même lorsque l'utilisateur fait défiler la page.
 */
