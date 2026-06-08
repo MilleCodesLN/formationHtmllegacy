@@ -1,0 +1,162 @@
+@font-face {
+     font-family: "Beauty_Mermaid";
+	src: url("../policies/Beauty_Mermaid.ttf") format("truetype");
+}
+
+
+*,
+::after,
+::before{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+    height: 400px;
+    background-color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    color: wheat;
+    font-family: 'Beauty_Mermaid', arial;
+    background-color: #ff8e6e;
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    padding: 15px 0px;
+}
+
+nav{
+    display: inline-block;
+    background-color: #515070;
+    width: 100%;
+    /* height: 50px; */
+    padding: 15px 0px;
+
+}
+nav a{
+    color: silver;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+footer nav{
+    padding: 0;
+}
+footer nav a {
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+    color: #ff8e6e;
+}
+.container{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+
+}
+section{
+    width: 100%;
+    position: relative;
+    top: 100px;
+
+}
+
+#presentation{
+    width: 50%;
+    vertical-align: top;
+}
+#lipsum{
+    width: 47%;
+    margin-left: 3%;
+    text-align: justify;
+    padding: 15px;
+    /* overflow: inherit; */
+    -webkit-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.3);
+background-color: #f1f3f8;
+  
+}
+
+.grey{
+     /* display: block; */
+    background-color: #515070;
+    width: 100%;
+    height: 50px;
+    /* position: relative; */
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    color: silver;
+
+
+     text-decoration: none;
+    text-transform: capitalize;
+    font-family: cursive;
+    /* padding-top: 10px; */
+}
+
+footer ul {
+    list-style-type: none; /* Cette propriété est nouvelle : elle permet de retirer les listes à puces d'une liste */
+    margin: 0; padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+footer  a{
+    color: silver;
+}
+
+
+
+
+h1{
+    margin-bottom: 25px;
+}
+p, div#presentation, div#lipsum{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    /* padding: 10px 5px; */
+    
+}
+.ingredients{
+    background-color: #393b44;
+    color: white;
+    padding: 15px;
+    /* width: 100%; */
+}
+
+
+
+
+
+
+#photo_recette{
+    width: 30%;
+    display: inline-block;
+}
+#colonne_droite {
+    vertical-align: top; /* Cette propriété est nouvelle. Elle permet de mettre tout en haut un élément qui se situe à côté d'un autre */
+    width: 67%;
+    margin-left: 3%;
+    display: inline-block;
+}
+#colonne_droite ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#etapes{
+    padding: 15px;
+
+}
