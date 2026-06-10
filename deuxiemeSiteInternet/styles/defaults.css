@@ -12,6 +12,13 @@ body {
 	background-color: #ffaf81;
 	color: #333;
 }
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+
 p {
 	margin-top: 200px;
 }
@@ -46,7 +53,6 @@ span {
     margin-top: 5ch;
     text-align: center;
 }
-
 
 
 
@@ -152,4 +158,50 @@ p::first-line {
 span::first-letter {
     font-size: 2em;
     color: crimson;
+}
+
+
+
+
+/************************************************/
+/* Bouton qui s'enfonce au clic */
+/************************************************/
+
+nav#main-nav ul li a{
+  clear: both;
+  display: inline;
+}
+nav#main-nav ul li a,
+nav#main-nav ul li,
+nav#main-nav ul li:nth-of-type(2) {
+  text-decoration:underline;
+    background-color: #ffaf81 ;
+    padding: 0;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+
+
+.button {
+  padding: 10px 20px;
+  background-color: #43658B;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+    width: 150px;
+  margin-left: 50px;
+}
+
+.button:active {
+  transform: translateY(2px);
+    -webkit-box-shadow: inset 0px 0px 17px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 17px 7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 17px 7px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+  background-color: #145374;
 }
