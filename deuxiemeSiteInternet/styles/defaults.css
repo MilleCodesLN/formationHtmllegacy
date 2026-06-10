@@ -1,0 +1,155 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: cursive, sans-serif;
+	line-height: 1.6;
+	background-color: #ffaf81;
+	color: #333;
+}
+p {
+	margin-top: 200px;
+}
+
+a {
+	color: navy;
+	text-decoration: none;
+	display: block;
+	width: 75px;
+	margin: 10px auto;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 5px;
+}
+
+
+ul {
+    margin-top: 50px;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+span {
+    display: block;
+    margin-top: 5ch;
+    text-align: center;
+}
+
+
+
+
+/**********************************************/
+/**********************************************/
+/*              PSEUDO-CLASSES                */
+/**********************************************/
+/**********************************************/
+
+
+/* 
+    SELECTEUR:NOM {
+        PROPRIETE: VALEUR;
+    } 
+*/
+
+
+li:first-of-type {
+    background-color: #ffaf81;
+    color: #fff;
+}
+li:last-of-type {
+    background-color: #ce3daa;
+    color: #fff;
+}
+
+/**********************************/
+/* Sélecteurs de type structural */
+li:nth-child(2) {
+    background-color: #022433;
+    color: #fff;
+}
+/* ou */
+li:nth-of-type(2) {
+    background-color: #2691c2;
+    color: #fff;
+}
+/***************************************/
+
+/* Effet de survol */
+.hover-link:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* Effet de clic */
+.clic-link:active {
+	color: crimson;
+	font-size: 1.5em;
+}
+
+/* Effet de sélection */
+.selected-link:focus {
+	background-color: crimson;
+}
+
+/* Effet de lien non visité */
+.not-visited-link:link {
+	outline: 2px solid green;
+}
+
+
+/* Effet de lien visité */
+/*Les propriétés CSS autorisées avec cette pseudo-classe sont color, background-color, border-color, border-bottom-color, border-left-color, border-right-color, border-top-color, column-rule-color, outline-color, text-decoration-color, et text-emphasis-color.*/
+
+
+a:visited {
+	background-color: green;
+}
+
+
+
+
+/**********************************************/
+/**********************************************/
+/*             PSEUDO-ELEMENTS                */
+/**********************************************/
+/**********************************************/
+
+/* 
+    SELECTEUR::NOM {
+        PROPRIETE: VALEUR;
+    } 
+*/
+
+p::before {
+    content: "Avant le paragraphe - ";
+    font-weight: bold;
+    color: #fff;
+}
+
+p::after{
+    content: "Après le paragraphe - ";
+    font-weight: bold;
+    color: #fff;
+}
+p::first-line {
+    font-size: 1.5em;
+    font-style: italic;
+    color: green;
+}
+
+span::first-letter {
+    font-size: 2em;
+    color: crimson;
+}
