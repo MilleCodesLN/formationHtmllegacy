@@ -1,0 +1,42 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: cursive;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+img{
+    /* padding: 30px; */
+    flex-basis: 300px;
+}
+
+#colonne_droite{
+    margin-left: 10px;
+    flex-grow: 1;
+}
+#ingredients{
+    background-color: #393b44;
+    color: white;
+    padding: 15px;
+}
+#ingredients ul{
+    padding: 0 30px;
+}
+
+#etapes {
+padding: 15px;
+}
+
+#etapes ol{
+     padding: 15px 30px;
+}
