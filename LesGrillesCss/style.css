@@ -1,0 +1,11 @@
+#grille{
+    border: 5px solid pink; display: grid;
+    grid-template-columns: repeat(1, 100px);
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: 250px;
+}
+
+.element{
+    border: 5px solid red;
+
+}
