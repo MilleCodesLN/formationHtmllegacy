@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+</head>
+<body>
+    <h1>Candidatures</h1>
+    <form action="resultat.html" method="post"> 
+        <!-- method="get"  affiche les données dans l'url-->
+        <!-- CHAMPS -->
+         <p>
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" maxlength="25" placeholder="Votre prénom" size="50"> <!-- chaque label est couplé par l'id à l'input-->
+        </p>
+        <p>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" value="Mon nom" >
+        </p>
+        <p>
+            <label for="motDePasse">Mot de passe : </label>
+            <input type="password" name="mot de passe" id="motDePasse">
+        </p>
+        <p>
+            <label for="lettreDeMotivation">Votre lettre de motivation :</label>
+            <textarea name="lettre" id="lettreDeMotivation" rows="15" cols="50">Je voudrais rejoindre votre entreprise parce que : </textarea>
+        </p>
+        <p>
+            <label for="email">Votre email :</label>
+            <input type="email" name="mail" id="email">
+        </p>
+    </form>
+    
+</body>
+</html>
