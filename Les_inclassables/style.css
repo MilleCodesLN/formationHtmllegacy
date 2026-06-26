@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+#boite{
+    background: yellow;
+    width: calc(100% - 200px);
+    margin: auto;
+    padding: 30px;
+}
+
+@supports(display:grid){
+    #grille{
+        display:grid;
+        background: pink;
+        width: 300px;
+        height: 300px;
+    }
+     .element-a{
+        width: 100%;
+        height: 150px;
+        border: 1px solid navy;
+    }
+    .element-b{
+        width: 150px;
+        height: 150px;
+        border: 1px solid violet;
+    }
+}
+
+@supports not (display:grid){
+    #grille{
+        display:inline-block;
+
+    }
+    .element-a{
+        display:inline-block;
+      width: 100%;
+        height: 150px;
+        border: 1px solid navy;
+    }
+    .element-b{
+        display:inline-block;
+        width: 150px;
+        height: 150px;
+        border: 1px solid violet;
+    }
+}
+
+   
