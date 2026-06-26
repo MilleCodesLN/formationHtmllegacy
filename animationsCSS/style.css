@@ -1,0 +1,70 @@
+body{
+    padding-left: 50px;
+}
+
+button{
+    padding: 15px 30px;
+    border: 0;
+    font-size: 1.5em;
+    transition: color 1s;
+}
+
+button:hover{
+    color:rgb(238, 93, 231);
+}
+
+/* Créer une animation */
+@keyframes premiereAnimation {
+    from{
+        background-color: grey;
+
+    }
+    50%{
+        color: green;
+    }
+    75%{
+        color: navy;
+    }
+    to{
+        background-color: blueviolet;
+        /* font-size: 2.5em; */
+        transform: scale(1.3);
+
+    }
+    
+}
+
+
+
+
+/* Utiliser cette animation */
+
+button:hover{
+    /* animation: premiereAnimation 1s infinite alternate;
+    -webkit-animation: premiereAnimation 1s infinite alternate; */
+    animation-name: premiereAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+
+/* Attention aux anciens navigateurs */
+
+@webkit-keyframes premiereAnimation {
+    from{
+        background-color: grey;
+
+    }
+
+    to{
+        background-color: blueviolet;
+        /* font-size: 2.5em; */
+        transform: scale(1.3);
+
+    }
+    
+}
