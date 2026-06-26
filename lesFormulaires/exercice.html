@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice formulaire</title>
+</head>
+<body>
+    <h1>Inscription</h1>
+    <form action="resultat.html" method="post">
+        <p>
+            <label for="prenom">Prénom : </label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+        </p>
+        <p>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+        </p>
+        <p>
+            <label for="password">Mot de passe : </label>
+            <input type="password" name="password" id="password" >
+        </p>
+        <p>
+            <label for="email">Votre email : </label>
+            <input type="email" name="email" id="email" placeholder="Votre email" required>
+        </p>
+        <p>
+            Biographie du compte :<br/>
+            <textarea name="biographie" id="biographie" cols="30" rows="5" required></textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="communication" id="communication" checked>
+            <label for="communication">Recevoir nos communications</label>
+        </p>
+        <p>
+            Sexe : 
+            <input type="radio" name="sexe" id="femme" checked>
+                <label for="femme">Femme</label>
+            <input type="radio" name="sexe" id="homme">       
+                <label for="homme">Homme</label>
+        </p>
+        <p>Pays : 
+            <select name="pays" id="pays" required>
+                <optgroup label="Europe">
+                    <option value="France">France</option>
+                    <option value="Italie">Itale</option>
+                    <option value="Espagne">Espagne</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="Congo">Congo</option>
+                </optgroup>
+            </select>
+        </p>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
