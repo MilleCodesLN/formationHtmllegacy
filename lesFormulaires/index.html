@@ -28,8 +28,61 @@
         </p>
         <p>
             <label for="email">Votre email :</label>
-            <input type="email" name="mail" id="email">
+            <input type="email" name="mail" id="email" required>
         </p>
+
+        <p>Les éléments d'options : 
+            <ul>
+                <li>Les cases à cocher</li>
+                <li>Les zones d'options</li>
+                <li>Les listes déroulantes</li>
+            </ul>
+        </p>
+        <p>
+            Cochez vos qualités: <br>
+            <input type="checkbox" name="social" id="social">
+            <label for="social">Social</label><br>
+            <input type="checkbox" name="aimable" id="aimable">
+            <label for="aimable">Aimable</label><br>
+            <input type="checkbox" name="serviable" id="serviable">
+            <label for="serviable">Serviable</label><br>
+        </p>
+         <p>
+            Cochez votre sexe: <br>
+            <input type="radio" name="sexe" id="femme" value="femme" checked>
+            <label for="femme">Femme</label><br>
+            <input type="radio" name="sexe" id="homme" value="homme">
+            <label for="homme">Homme</label><br>
+           
+        </p>
+        <p>
+            <label for="etudes">Quel niveau d'études avez-vous?</label>
+            <select name="etudes" id="etudes">
+                <optgroup label="Diplômé">
+                    <option value="brevet">Brevet</option>
+                    <option value="bac" selected>Bac</option>
+                    <option value="licence">Licence</option>
+                </optgroup>
+                <optgroup label="Sans diplôme">
+                    <option value="college">Niveau collège</option>
+                    <option value="lycee">Niveau lycée</option>
+                </optgroup>
+        </select>
+        </p>
+        <p>Les champs pour suggérer des valeurs prédéfinies :</p>
+        <p>
+            <label for="cartes">Quelle carte bleue avez vous ?</label>
+            <input type="text" name="cartes" id="cartes" list="cb">
+            <datalist id="cb">
+              <option value="Visa Classique"></option>  
+              <option value="Mastercard"></option>  
+              <option value="Autres"></option>  
+            </datalist>
+        </p>
+       
+        <button type="submit">Envoyer</button>
+        <input type="button" value="Envoyer le formulaire">
+        <input type="submit" value="Envoyer le formulaire"> <!-- Envoi le formulaire même s'il est vide, on utilisera required sur les champs-->
     </form>
     
 </body>
