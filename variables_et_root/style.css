@@ -1,0 +1,11 @@
+:root {
+    background-color: bisque;
+    --primaryColor: navy;
+    --secondaryColor: pink;
+    --margeParfaite: 25px 70px;
+}
+h1{
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    margin: var(--margeParfaite);
+}
