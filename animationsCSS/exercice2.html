@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercice 1</title>
+
+		<style>
+			body {
+				margin: 100px;
+			}
+
+			button {
+				padding: 15px 30px;
+				border: 0;
+				font-size: 1.5em;
+				animation: deplacement 2s infinite alternate;
+                -webkit-animation: deplacement 2s infinite alternate;
+			}
+			@keyframes deplacement {
+				0% {
+					margin: 0;
+				}
+				25% {
+					margin-left: 150px;
+					margin-top: 0;
+				}
+				50% {
+					margin-top: 150px;
+					margin-left: 150px;
+				}
+
+				75% {
+					margin-left: 0;
+					margin-top: 150px;
+				}
+
+				100% {
+				}
+			}
+
+			@-webkit-keyframes deplacement {
+                0% {
+					margin: 0;
+				}
+				33% {
+					margin-left: 150px;
+					margin-top: 0;
+				}
+				66% {
+					margin-top: 150px;
+					margin-left: 150px;
+				}
+
+				100% {
+                    margin-left: 0;
+					margin-top: 150px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<button>Mon bouton</button>
+	</body>
+</html>

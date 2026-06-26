@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+
+    <style>
+        body {
+        margin: 100px;
+        }
+
+        button {
+        padding: 15px 30px;
+        border: 0;
+        font-size: 1.5em;
+        animation: apparition 1s;
+        -webkit-animation: apparition 1s;
+    }
+    @keyframes apparition {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            background-color: #ec74c8;
+        }
+    }
+  
+    
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }  
+}
+
+    </style>
+</head>
+<body>
+    <button>Mon bouton</button>
+</body>
+</html>
