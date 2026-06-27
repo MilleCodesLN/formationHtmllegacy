@@ -1,46 +1,103 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-		<link rel="stylesheet" href="style.css" />
-		<title>Portfolio</title>
-	</head>
-	<body>
+<head>
+	    <!-- BALISES CARTES SOCIALES -->
+    <meta property="og:title" content="Le portfolio de John Doe">
+    <meta property="og:description" content="Bienvenue sur mon portfolio">
+    <meta property="og:image" content="https://johndoe.com/mon-image.png">
+    <meta property="og:url" content="https://johndoe.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="John Doe | Portfolio">
+    <meta property="og:image:alt" content="Le texte alternatif de l'image">
+
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" />
+	<title>John Doe | Portfolio</title>
+</head>
+<body>
+	<section id="bienvenue">
 		<header>
-			<p>JOHN DOE</p>
-			<nav>
-				<a href="index.html">Accueil</a>
-				<a href="contact.html">Contactez-moi</a>
-			</nav>
-			<div id="header">
-				<div class="left">
-					<h1>Portfolio</h1>
-					<p>
-						Développeur web maitrisant parfaitement les aszpects de
-						la création d'un site internet efficace, si
-					</p>
-				</div>
-				<div class="right">
-					<img src="" alt="" />
-				</div>
+			<div id="flex-header" class="container"> <!-- ON UTILISE FLEXBOX POUR ALIGNER -->
+				<div id="logo">JOHN DOE</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Accueil</a>
+						</li>
+						<li>
+							<a href="contact.html">Contactez-moi</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
-		<main>
-			<div class="creation">
-				<h2>Mes créations</h2>
-				<p>Voir toutes mes créations</p>
+
+		<!-- ON UTILISE ENCORE FLEXBOX POUR ALIGNER -->
+		<div class="container">
+			<div id="flex-presentation">
+				<div class="gauche-presentation">
+					<h1>Portfolio</h1>
+					<span>Développeur web maitrisant parfaitement les aspects de
+						la création d'un site internet efficace, simple et intuitif. Bienvennue sur mon
+						portfolio.</span>
+				</div>
+				<div class="droite-presentation">
+					<img src="images/illustration.png" alt="logo de la page principale" width="350px">
+				</div>
 			</div>
-            <div class="contact">
-                <h2>Contact</h2>
-                <p>Alors, on travail ensemble?</p>
-                    <a href="mailto:blabla@bla.com">Envoyer un email</a>
-            </div>
-		</main>
-        <hr>
-        <footer>
-            <p>&copy; John Doe</p>
-        </footer>
-	</body>
+		</div>
+	</section>
+
+	<section>
+		<!-- LA PARTIE "CREATIONS" -->
+		<div class="container">
+			<h2>Créations</h2>
+			<p class="texte-presentation">Voir toutes mes créations</p>
+			<!-- ON UTILISE UNE GRILLE POUR LES PROJETS -->
+			<div id="projet-grille">
+				<a href="projects/jump-start.html">
+					<div class="project project-1">
+						<!-- <img src="images/jump-start.png" alt="jump-start" /> -->
+						<h3>Jump-start</h3>
+					</div>
+				</a>
+				<a href="project2">
+					<div class="project project-2">
+						<!-- <img src="images/mega-pop.jpg" alt="mega-pop" /> -->
+						<h3>Mega-pop</h3>
+					</div>
+				</a>
+				<a href="project3">
+					<div class="project project-3">
+						<!-- <img src="images/pac-man.jpg" alt="pac-man" /> -->
+						<h3>Pac-man</h3>
+					</div>
+				</a>
+				<a href="project4">
+					<div class="project project-4">
+						<!-- <img src="images/rodeo-pump.jpg" alt="rodeo-pump" /> -->
+						<h3>Rodeo-pump</h3>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Contact</h2>
+		<p class="texte-presentation">Alors, on travail ensemble?</p>
+		<div id="contact">
+			<a class="bouton" href="mailto:blabla@bla.com">Envoyer un email</a>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; John Doe</p>
+		</div>
+	</footer>
+</body>
 </html>
